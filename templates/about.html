@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}About - Blake Ridgway{% endblock %}
+
+{% block content %}
+<section class="about">
+    <div class="container">
+        <h1>About Me</h1>
+        <section class="author-section">
+            <div class="author-grid">
+                <div class="author-member">
+                    <img src="{{ url_for('static', filename='images/author.jpg') }}" alt="Author" class="author-image">
+                </div>
+            </div>
+        </section>
+        <p>Hi, I'm Blake Ridgway, the author of this blog. I'm an ultra-endurance cyclist, computer nerd, and open-source enthusiast. I created this blog to share my adventures, ideas, and passion for technology and cycling.</p>
+        <p>When I'm not riding or coding, I enjoy exploring the outdoors, tinkering with my homelab, and building innovative tools for the tech community.</p>
+
+<section class="about-section">
+    <div class="container">
+        <div class="social-links">
+            <p>Feel free to connect with me on social media:</p>
+            <ul>
+                <a href="https://mastodon.bsd.cafe/@blake" target="_blank"><i class="fab fa-mastodon"></i> Mastodon</a> |
+                <a href="https://www.linkedin.com/in/blakearidgway" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> |
+                <a href="https://github.com/blakeridgway" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock %}
