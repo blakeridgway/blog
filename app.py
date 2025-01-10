@@ -1,5 +1,3 @@
-from lib2to3.btm_utils import reduce_tree
-
 from flask import Flask, render_template
 
 app = Flask(__name__)
